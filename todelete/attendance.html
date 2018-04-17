@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance-Attendance Monitoring System</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<div class="body">
+
+<div class="sidebar-attendance">
+  <div class="sidebar-head">
+    Cagayan State University<br>
+    College of Infromation and Computing Sciences
+  </div>
+  <div class="table-attendance" id="id02">
+    
+  </div>
+</div>
+
+<div class="sidebar-right-attendance">
+  <div class="form-attendance">
+       <div class="imgcontainer-home">
+              <div class="imgcontainer-avatar-home">
+                  <img src="img/csu-cics1.png" alt="Avatar" class="avatar-home">
+              </div>
+              <div class="dateandtime">
+                  <div class="date">
+                    March 30, 2017
+                  </div>
+                  <div class="time">
+                    10:00 am
+                  </div> 
+              </div>
+       </div>
+       <div class="attend">
+            <div class="attend1">
+              <img src="img/attendance.png" class="img-home">
+            </div>
+            <div class="attend2">
+              <button class="button-home" onclick="document.getElementById('id01').style.display='block'">View Attendance</button>
+            </div>
+       </div>
+       <div class="student">
+          <div class="attend1">
+            <img src="img/student.png" class="img-home-stud">
+          </div>
+          <div class="attend2">
+            <button class="button-home">Add Attendance</button>
+          </div>
+       </div>
+       <!-- <div class="student">
+          <div class="attend1">
+            <img src="img/dept.png" class="img-home">
+          </div>
+          <div class="attend2">
+            <button class="button-home">Departments</button>
+          </div>  
+       </div>
+       <div class="student">
+          <div class="attend1">
+            <img src="img/calendar.png" class="img-home-event">
+          </div>
+          <div class="attend2">
+            <button class="button-home">Events</button>
+          </div>  
+       </div> -->
+       <div class="container-footer-home-user">
+         <a href="home-admin.html"><button class="button-back-home">Back</button></a>
+       </div>
+  </div>
+
+    //////////////////// The Modal /////////////////////
+     <div id="id01" class="modal">
+      <div class="modal-1">
+        <span onclick ="document.getElementById('id01').style.display='none'" class="close" title ="Close" >&times;</span>
+        /////////// Modal Content ///////////
+        <form  action="login.php" method="POST" class="modal-content animate">
+          <div class="imgcontainer">
+            <img src="img/avatar.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="txtUserName">
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="txtPassword">
+            <button type="submit" onclick="document.getElementById('id02').style.display='action'">Log in</button> 
+          </div>
+          <div class="container-footer">
+            <button type="button" onclick ="document.getElementById('id01').style.display='none'" class ="cancelbtn">Cancel</button>
+            
+          </div>
+        </form>
+      </div> 
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>
